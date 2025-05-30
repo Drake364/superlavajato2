@@ -1,44 +1,8 @@
-{
-    // Use o IntelliSense para saber mais sobre os atributos possíveis.
-    // Focalizar para exibir as descrições dos atributos existentes.
-    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-
-
-
-        {
-            "type": "firefox",
-            "request": "launch",
-            "reAttach": true,
-            "name": "Launch add-on",
-            "addonPath": "${workspaceFolder}"
-        },
-        {
-            "type": "firefox",
-            "request": "launch",
-            "reAttach": true,
-            "name": "Launch localhost",
-            "url": "http://localhost/index.html",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
-            "type": "firefox",
-            "request": "attach",
-            "name": "Attach"
-        },
-        {
-            "type": "firefox",
-            "request": "launch",
-            "reAttach": true,
-            "name": "Launch index.html",
-            "file": "${workspaceFolder}/index.html"
-        },
-        {
-            "type": "firefox",
-            "request": "launch",
-            "reAttach": true,
-            "name": "Run tests"
+class Name {
+    constructor(array, parameters) {
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            // use parameters as needed
         }
-    ]
+    }
 }
