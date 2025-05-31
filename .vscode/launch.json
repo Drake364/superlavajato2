@@ -1,8 +1,0 @@
-class Name {
-    constructor(array, parameters) {
-        for (let index = 0; index < array.length; index++) {
-            const element = array[index];
-            // use parameters as needed
-        }
-    }
-}
