@@ -1,0 +1,51 @@
+[
+    {
+        "testName": "Should have correct version",
+        "assert": {
+            "property": "version",
+            "equals": "0.2.0"
+        }
+    },
+    {
+        "testName": "Should have one configuration",
+        "assert": {
+            "property": "configurations.length",
+            "equals": 1
+        }
+    },
+    {
+        "testName": "Configuration should use Deno",
+        "assert": {
+            "property": "configurations[0].type",
+            "equals": "deno"
+        }
+    },
+    {
+        "testName": "Program path should be main.ts in workspace folder",
+        "assert": {
+            "property": "configurations[0].program",
+            "equals": "${workspaceFolder}/main.ts"
+        }
+    },
+    {
+        "testName": "Should allow all permissions",
+        "assert": {
+            "property": "configurations[0].runtimeArgs",
+            "contains": "--allow-all"
+        }
+    },
+    {
+        "testName": "Should enable inspect-brk",
+        "assert": {
+            "property": "configurations[0].runtimeArgs",
+            "contains": "--inspect-brk"
+        }
+    },
+    {
+        "testName": "Should set port to 9229",
+        "assert": {
+            "property": "configurations[0].port",
+            "equals": 9229
+        }
+    }
+]
